@@ -10,4 +10,4 @@ database is mounted with two directories:
 
 Remember to change the time zone of each container depending on your location
   `container`
-      TZ: <yourtimezone>
+      TZ: <yourtimezone></yourtimezone>
