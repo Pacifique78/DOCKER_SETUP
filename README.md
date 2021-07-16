@@ -7,3 +7,7 @@ Uses docker-compose to create
 database is mounted with two directories: 
   - one is db : files from here an be accessed from inside the container ex: when you want to dump some .sql files
   - the other is mysql
+
+Remember to change the time zone of each container depending on your location
+  `container`
+      TZ: <yourtimezone>

@@ -10,6 +10,7 @@ services:
       PMA_HOST: database
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
+      TZ: Africa/Kigali
     restart: always
     ports:
       - 8081:80
@@ -26,6 +27,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: user
       MYSQL_ROOT_PASSWORD: root
+      TZ: Africa/Kigali
     ports:
       - 8010:3306
     volumes:
@@ -46,6 +48,8 @@ services:
     depends_on:
       - database
       - phpmyadmin
+    environment: 
+      TZ: Africa/Kigali
     command: npm run dev
     networks:
       - my-network
